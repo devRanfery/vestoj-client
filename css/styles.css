@@ -24,6 +24,33 @@ body {
   z-index: 99;
 }
 
+/* .fondoImg {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.bg-modal-login {
+  background-image: url(../image/LavadoraGrandeModal.svg);
+  background-repeat: no-repeat;
+  background-position-x: 300px;
+}
+
+.bg-Modal {
+  /* background-position: center; */
+  background-image: url(../image/LavadoraGrandeModal.svg);
+  background-repeat: no-repeat;
+  background-size: 400px;
+  background-position-x: 250px;
+}
+
+.bg-modal-pass {
+  background-image: url(../image/LavadoraGrandeModal.svg);
+  background-repeat: no-repeat;
+  background-position-x: 350px;
+}
+
 .btn-pay {
   border-radius: 30px;
   background: white;
@@ -246,15 +273,17 @@ body {
 }
 
 .bordes-input {
-  border: none;
-  outline: none;
+  background: none;
+  border: 0px;
   border-bottom: 1px solid rgb(52, 171, 191);
 }
 
-/* .bordes-input input:focus {
-  border: 1px solid white;
+.bordes-input:focus {
+  background: none;
+  border: 0px;
+  border-bottom: 1px solid rgb(52, 171, 191);
   outline: none;
-} */
+}
 
 .textmodal {
   font-weight: bold;

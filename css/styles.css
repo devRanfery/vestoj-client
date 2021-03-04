@@ -1,0 +1,331 @@
+@font-face {
+  font-family: 'Caros Bold';
+  src: url('../fonts/cretypeCarosBold.woff');
+}
+
+@font-face {
+  font-family: 'Caros Extra Light';
+  src: url('../fonts/cretype\ \ Caros\ ExtraLight.woff');
+}
+
+body {
+  background: #d9f4ff;
+}
+.buy {
+  color: white;
+  text-align: center;
+  width: 300px;
+  background-color: rgb(52, 172, 191);
+  border-radius: 10px;
+  position: fixed;
+  padding: 10px 5px;
+  top: 30px;
+  right: 10px;
+  z-index: 99;
+}
+
+.btn-pay {
+  border-radius: 30px;
+  background: white;
+  padding: 10px;
+  width: 150px;
+  border: none;
+}
+
+/* boton flotante */
+.btn-flotante {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 50px 0px 0px 50px;
+  letter-spacing: 2px;
+  background-color: rgb(6, 56, 115);
+  padding: 10px;
+  position: fixed;
+  bottom: 40px;
+  right: 0px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.close {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 50px;
+  letter-spacing: 2px;
+  background-color: rgb(6, 56, 115);
+  padding: 10px;
+  position: fixed;
+  bottom: 40px;
+  right: 5px;
+  transition: all 300ms ease 0ms;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+}
+
+.btn-flotante:hover {
+  background-color: rgb(52, 171, 191);
+  color: #fff;
+  /* box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-7px); */
+}
+
+.container-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bold;
+  /* color: #ffffff; */
+  /* border-radius: 50px;
+  background-color: rgb(6, 56, 115); */
+  position: fixed;
+  bottom: 110px;
+  right: 15px;
+  z-index: 99;
+}
+
+.btn-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/* Fonts */
+.fontCarosBold {
+  font-family: 'Caros Bold';
+}
+
+.fontCarosExtraLight {
+  font-family: 'Caros Extra Light';
+}
+
+/* Colors */
+.text-catalina-blue {
+  color: rgb(6, 56, 115);
+}
+
+.text-bg {
+  color: rgb(52, 171, 191);
+}
+
+.nav-link {
+  color: rgb(6, 56, 115);
+  border-bottom: 1px solid #fff;
+  padding: 0.3rem 1rem;
+}
+
+.nav-link:hover {
+  color: rgb(6, 56, 115);
+  font-weight: bold;
+  border-bottom: 1px solid rgb(6, 56, 115);
+}
+
+.icon-service {
+  width: 80px;
+}
+
+.service-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-services {
+  background-color: white;
+  border-radius: 30px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.content-image-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-service {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: rgb(52, 172, 191);
+}
+/* .text-service-center {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+} */
+
+.text-center-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn-price {
+  width: 80px;
+  border: 2px solid rgb(6, 56, 115);
+  padding: 2px 0px;
+  margin: 0px 5px 0px 0px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.quantity {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(6, 56, 115);
+  border-radius: 20px;
+}
+
+.quantity input[type='number']::-webkit-inner-spin-button,
+.quantity input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.quantity input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  border: none;
+  padding: 2px 5px;
+  width: 40px;
+  text-align: center;
+  outline: none;
+}
+
+.quantity input:focus {
+  /* border: 2px solid rgb(6, 56, 115);
+  padding: 2px 5px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  text-align: center; */
+  outline: none;
+}
+
+.btnQuantity {
+  width: 10px;
+}
+/* modal */
+.modal-titulo {
+  margin: 0px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.titulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bordes-input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgb(52, 171, 191);
+}
+
+/* .bordes-input input:focus {
+  border: 1px solid white;
+  outline: none;
+} */
+
+.textmodal {
+  font-weight: bold;
+  font-size: 14px;
+  /* line-height: 10px; */
+  margin-bottom: 30px;
+}
+
+.btn-login {
+  color: white;
+  font-size: 18px;
+  border-radius: 30px;
+  background: rgb(52, 171, 191);
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0px;
+}
+
+.text-decoration {
+  text-decoration: none;
+  color: rgb(52, 171, 191);
+}
+
+.text-decoration:hover {
+  text-decoration: none;
+  color: rgb(6, 56, 115);
+}
+
+@media only screen and (max-width: 600px) {
+  .content-image-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-service {
+    text-align: center;
+    font-size: 14px;
+  }
+  .card-services {
+    margin: 20px;
+  }
+  .buy {
+    width: 200px;
+    font-size: 12px;
+    top: 80px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .text-service {
+    text-align: center;
+  }
+}
+
+/* 
+@media only screen and (min-width: 600px) {
+  .content-image-service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-services {
+    margin: 20px;
+  }
+} */
+
+/* @media only screen and (min-width: 1200px) {
+  body {
+    background-color: salmon;
+  }
+  .text-service-center {
+    text-align: center;
+    font-size: 12px;
+  }
+} */

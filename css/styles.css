@@ -154,6 +154,15 @@ body {
   color: rgb(52, 171, 191);
 }
 
+.text-white {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: rgb(52, 172, 191);
+  color: #000;
+}
+
 .nav-link {
   color: rgb(6, 56, 115);
   border-bottom: 1px solid #fff;
@@ -168,6 +177,11 @@ body {
 
 .icon-service {
   width: 80px;
+}
+
+#DropdownSocial {
+  background-color: rgb(6, 56, 115);
+  color: #fff;
 }
 
 .service-center {

@@ -9,6 +9,7 @@
 //     return false;
 //   });
 // });
+
 $(document).ready(function () {
   $('#min').click(function () {
     //Solo si el valor del campo es diferente de 0
@@ -21,6 +22,8 @@ $(document).ready(function () {
     //Aumentamos el valor del campo
     $('#cantidadInput').val(parseInt($('#cantidadInput').val()) + 1);
   });
+
+  $('#logout-modal').modal('show');
 });
 
 // BTN TOGGLE SOCIAL

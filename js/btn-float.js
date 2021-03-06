@@ -1,6 +1,6 @@
 // OJO MUESTRA MODAL COMPARTIR
 $(document).ready(function () {
-  $('#share-modal').modal('show');
+  // $('#share-modal').modal('show');
 });
 
 // BTN TOGGLE SOCIAL

@@ -348,7 +348,46 @@ body {
 /* End Modal Share */
 
 /* ------------------------------------------------------------------------------- */
+/* Shoping */
 
+/* Codigo de promocion */
+.promotionCode {
+  display: flex;
+  align-items: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.btn-blue-pelarous {
+  background-color: rgb(52, 171, 191);
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 0px;
+  color: #fff;
+}
+
+.priceShopping {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0px 0px 20px 0px;
+}
+
+/* Address Shopping */
+.content-btn-add {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Request */
+.btnRequest {
+  background-color: rgb(6, 56, 115);
+  font-size: 25px;
+  padding: 2px 30px;
+  border: 0px;
+  border-radius: 50px;
+  color: #fff;
+}
 /* ------------------------------------------------------------------------------- */
 /* START MEDIAS QUERYS */
 @media only screen and (max-width: 600px) {
@@ -370,10 +409,22 @@ body {
     font-size: 12px;
     top: 80px;
   }
+  /* Shopping */
+  .promotionCode {
+    flex-direction: column;
+    display: flex;
+    align-items: normal;
+    margin: 0px 0px 20px 0px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .text-service {
     text-align: center;
+  }
+
+  .promotionCode {
+    flex-direction: column;
+    align-items: normal;
   }
 }

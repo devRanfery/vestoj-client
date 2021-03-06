@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Caros Extra Light';
-  src: url('../fonts/cretype\ \ Caros\ ExtraLight.woff');
+  src: url('../fonts/cretypeCarosExtraLight.woff');
 }
 
 /* Class for fonts */
@@ -29,6 +29,15 @@
 
 .text-white {
   color: #fff;
+}
+
+.text-black {
+  color: #000;
+}
+
+/* background */
+.bg-catalina-blue {
+  background-color: rgb(6, 56, 115);
 }
 
 /* Modify dropdown - navbar */
@@ -62,4 +71,13 @@
 .text-decoration:hover {
   text-decoration: none;
   color: rgb(6, 56, 115);
+}
+
+/* Margin */
+.m-top {
+  margin-top: 50px;
+}
+
+.m-bottom {
+  margin-bottom: 50px;
 }

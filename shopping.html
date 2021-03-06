@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Styles Css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Styles Main Css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--  -->
+    <script
+      src="https://kit.fontawesome.com/585801ee80.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vestoj</title>
+  </head>
+  <body>
+    <!--Button asesoria en linea -->
+    <a class="btn-flotante" id="btn-dialog-social"
+      ><img src="image/burbuja-de-dialogo.svg" width="50px" alt=""
+    /></a>
+
+    <!-- Button close -->
+    <a class="close" id="btn-dialog-social-ocultar"
+      ><img src="image/close.svg" width="35px" alt=""
+    /></a>
+
+    <!-- Content Social -->
+    <div class="container-social">
+      <a href="#" class="btn-social"
+        ><i class="fab fa-whatsapp" style="color: #25d366"></i
+      ></a>
+      <a href="#" class="btn-social"
+        ><i class="fab fa-facebook-messenger" style="color: #0078ff"></i
+      ></a>
+      <a href="#" class="btn-social"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <!-- Carrito de compras -->
+    <!-- <div class="buy">
+      <p class="fontCarosExtraLight">
+        Tu canasta contiene: <span class="fontCarosBold">7 Servicios</span>
+      </p>
+      <p class="fontCarosExtraLight">
+        Total estimado: <span class="fontCarosBold">$205.00</span>
+      </p>
+      <button class="btn-pay fontCarosBold text-catalina-blue">Continuar</button>
+    </div> -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="image/logo-black.svg" width="150px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fontCarosExtraLight" aria-current="page" href="#"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fontCarosExtraLight"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                href="#"
+                >Iniciar Sesión</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fontCarosExtraLight dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cuenta
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">A</a></li>
+                <li><a class="dropdown-item" href="#">B</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fontCarosExtraLight dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Compartir
+              </a>
+              <ul
+                class="dropdown-menu"
+                id="DropdownSocial"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    <i class="fab fa-facebook" style="color: #3b5998"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    <i class="fab fa-whatsapp" style="color: #25d366"></i>
+                    WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    <i class="fab fa-twitter-square" style="color: #00acee"></i>
+                    Twitter
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Text Service -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center p-3">
+          <h1 class="fontCarosBold text-catalina-blue">Servicios</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 text-left p-3">
+          <h4 class="fontCarosBold">
+            Tu canasta contiene:
+            <span class="text-catalina-blue">3 Servicios</span>
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div class="container">
+      <div class="row card-services">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 content-image-service">
+          <div class="image-service">
+            <img class="icon-service" src="image/Canasta.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 text-service-center">
+          <div class="text-service">
+            <h1 class="text-catalina-blue fontCarosBold">Lavado por kilo</h1>
+            <p class="text-bg fontCarosExtraLight" style="font-size: 19px">
+              Ingresa la cantidad de peso en kilos estamados de tu ropa pón
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 service-center">
+          <div class="text-center-number">
+            <div class="price btn-price fontCarosBold text-catalina-blue">$ 35.00</div>
+            <div class="text-bg">Precio/U</div>
+          </div>
+
+          <div class="text-center-number">
+            <div class="total btn-price fontCarosBold text-catalina-blue">$ 175.00</div>
+            <div class="text-bg">Total</div>
+          </div>
+
+          <div class="text-center-number">
+            <div class="quantity fontCarosBold text-catalina-blue">
+              <div class="btnQuantity" id="min"><i class="fas fa-minus"></i></div>
+              <input
+                class="fontCarosBold text-catalina-blue"
+                type="number"
+                id="cantidadInput"
+                value="0"
+              />
+              <div class="btnQuantity" id="plus"><i class="fas fa-plus"></i></div>
+            </div>
+            <div class="text-bg">Cantidad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Total Shopping - Promotion -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+          <div class="promotionCode">
+            <h4 class="text-catalina-blue fontCarosBold" style="margin: 10px">
+              Codigo promoción:
+            </h4>
+            <input type="text" style="margin: 10px" />
+            <button class="fontCarosBold btn-blue-pelarous" style="margin: 10px">
+              Continuar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="priceShopping">
+            <h4 class="text-catalina-blue fontCarosBold">
+              SubTotal: <span class="text-black">$ 235.00</span>
+            </h4>
+            <h4 class="text-catalina-blue fontCarosBold">
+              Descuento: <span class="text-black">$ 0.00</span>
+            </h4>
+            <h4 class="text-catalina-blue fontCarosBold">
+              Total Estimado: <span class="text-black">$ 235.00</span>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Total Shopping - Promotion -->
+
+    <!-- Date Collections -->
+    <div class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="fontCarosBold m-top">
+              Selecciona las fechas en que recogeremos tu ropa y la entregaremos limpia.
+            </h4>
+            <h5 class="fontCarosExtraLight text-bg">
+              Ten en cuenta que el servicio de lavanderia es de Lunes a Viernes 08:00 AM
+              -06:30 PM y Sabados <br />
+              de 08:00 AM - 03:00 PM.
+            </h5>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-6">
+            <h4 class="fontCarosBold text-catalina-blue">Fecha de recolección</h4>
+            <div class="dateCollection">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="datetime-local"
+                  value="2011-08-19T13:45:00"
+                  id="example-datetime-local-input"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h4 class="fontCarosBold text-catalina-blue">Fecha de entrega</h4>
+            <div class="dateCollection">
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="datetime-local"
+                  value="2011-08-19T13:45:00"
+                  id="example-datetime-local-input"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    <!-- End Date Collections -->
+
+    <!-- Address -->
+    <div class="bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4 class="fontCarosBold">Selecciona donde recogeremos tu ropa.</h4>
+            <h5 class="fontCarosExtraLight text-bg">
+              El lugar de recoleccion sera el lugar al cual entregaremos de regreso tus
+              prendas limpias.
+            </h5>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="content-btn-add">
+              <button class="fontCarosBold btn-blue-pelarous" style="margin-left: 15px">
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-xs-12 col-lg-12" style="overflow: scroll">
+            <table class="table table-responsive table-bordered border-primary">
+              <thead class="bg-catalina-blue text-white fontCarosExtraLight">
+                <tr>
+                  <th scope="col ">Preferente</th>
+                  <th scope="col">Domicilio</th>
+                  <th scope="col">Editar</th>
+                  <th scope="col">Seleccionar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="fontCarosExtraLight text-bg"></th>
+                  <td class="fontCarosExtraLight text-bg">
+                    Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul -
+                    Telefono 7821094880
+                  </td>
+                  <td class="fontCarosExtraLight text-bg text-center">
+                    <i class="far fa-edit"></i>
+                  </td>
+                  <td class="fontCarosExtraLight text-bg text-center">
+                    <i class="far fa-check-circle"></i>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="fontCarosExtraLight text-bg">Preferencia</th>
+                  <td class="fontCarosExtraLight text-bg">
+                    Villanueva 32 #109 - Nuevo retorno- 93250 - NA - #34 - NA - Poza rica-
+                    Telefono 783...
+                  </td>
+                  <td class="fontCarosExtraLight text-bg text-center">
+                    <i class="far fa-edit"></i>
+                  </td>
+                  <td class="fontCarosExtraLight text-bg text-center">
+                    <i class="far fa-check-circle"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-12">
+            <h5 class="fontCarosBold text-catalina-blue">Dirección Seleccionada:</h5>
+          </div>
+          <div class="col-lg-12">
+            <div class="form-floating">
+              <textarea class="form-control" style="height: 100px"></textarea>
+              <label for="floatingTextarea2"
+                >Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
+                7821094880</label
+              >
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-12 m-bottom">
+            <h4 class="fontCarosBold">
+              Añadir detalles
+              <a href="#">
+                <i class="fas fa-plus-circle"></i>
+              </a>
+            </h4>
+            <button class="btnRequest fontCarosBold">Solicitar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">Inicar Sesion</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-modal-login">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Inicia ahora, comienza a realizar tus pedidos. ¿No tienes cuenta?
+                  <span>
+                    <a
+                      class="fontCarosExtraLight text-decoration"
+                      id="viewRegister"
+                      href="#"
+                      >Crea tu cuenta ahora</a
+                    ></span
+                  >
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control bordes-input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Contraseña"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">
+                  Iniciar Sesión
+                </button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Olvidaste tu contraseña, recuperala
+                  <span>
+                    <a class="fontCarosExtraLight text-decoration" id="recuperar" href="#"
+                      >aqui</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Logout -->
+    <div
+      class="modal fade"
+      id="logout-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="titulo">
+              <h5 class="modal-titulo text-bg fontCarosBold">Cerrar Sesion</h5>
+            </div>
+            <br />
+            ¿Estas seguro que quieres cerrar tu sesión?
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Cerrar Sesión</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Share -->
+    <div
+      class="modal fade"
+      id="share-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">Compartir</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fontCarosExtraLight">
+              Con tu ayuda lograremos que más personas conozcan sobre nuestros servicios.
+            </p>
+
+            <p class="fontCarosExtraLight text-catalina-blue">
+              Comparte este sitio con tus amigos o familiares.
+            </p>
+
+            <div class="content-social">
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-facebook-messenger" style="color: #00b2ff"></i>
+                </div>
+                <h5 class="text-bg">Messenger</h5>
+              </a>
+
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-whatsapp" style="color: #00bb2d"></i>
+                </div>
+                <h5 class="text-bg">WhatsApp</h5>
+              </a>
+
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-twitter" style="color: #00acee"></i>
+                </div>
+                <h5 class="text-bg">Twitter</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div
+      class="modal fade"
+      id="modalRegister"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="overflow-y: scroll"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">Registrate</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-Modal">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  ¡Unase a Vestoj! Configuremos tu cuenta.
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Primer apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Segundo apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control bordes-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Telefono"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Contraseña"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Confirmar contraseña"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">Registrarse</button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Al hacer clic en registrarse, acepta los termino de privacidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Password -->
+    <div
+      class="modal fade"
+      id="passwordModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5
+                class="modal-titulo text-catalina-blue fontCarosBold text-center"
+                style="font-size: 30px"
+              >
+                Recuperar Contraseña
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-modal-pass">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Olvidaste tu contraseña, no te preocupes.
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control bordes-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">Recuperar</button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight" style="font-size: 12px">
+                  Enviaremos un correo con tus datos para que puedas volver a iniciar
+                  sesión.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/btn-float.js"></script>
+    <script src="js/quantityInput.js"></script>
+  </body>
+</html>

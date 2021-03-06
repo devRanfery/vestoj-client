@@ -1,0 +1,65 @@
+/* Import Fonts */
+@font-face {
+  font-family: 'Caros Bold';
+  src: url('../fonts/cretypeCarosBold.woff');
+}
+
+@font-face {
+  font-family: 'Caros Extra Light';
+  src: url('../fonts/cretype\ \ Caros\ ExtraLight.woff');
+}
+
+/* Class for fonts */
+.fontCarosBold {
+  font-family: 'Caros Bold';
+}
+
+.fontCarosExtraLight {
+  font-family: 'Caros Extra Light';
+}
+
+/* Colors text */
+.text-catalina-blue {
+  color: rgb(6, 56, 115);
+}
+
+.text-bg {
+  color: rgb(52, 171, 191);
+}
+
+.text-white {
+  color: #fff;
+}
+
+/* Modify dropdown - navbar */
+.dropdown-item:hover {
+  background-color: rgb(52, 172, 191);
+  color: #000;
+}
+
+.nav-link {
+  color: rgb(6, 56, 115);
+  border-bottom: 1px solid #fff;
+  padding: 0.3rem 1rem;
+}
+
+.nav-link:hover {
+  color: rgb(6, 56, 115);
+  font-weight: bold;
+  border-bottom: 1px solid rgb(6, 56, 115);
+}
+
+#DropdownSocial {
+  background-color: rgb(6, 56, 115);
+  color: #fff;
+}
+
+.text-decoration {
+  text-decoration: none;
+  color: rgb(52, 171, 191);
+}
+
+.text-decoration:hover {
+  text-decoration: none;
+  color: rgb(6, 56, 115);
+}

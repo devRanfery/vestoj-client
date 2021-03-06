@@ -14,6 +14,8 @@
     <!-- Styles Css -->
     <link rel="stylesheet" href="css/styles.css" />
 
+    <!-- Styles Main Css -->
+    <link rel="stylesheet" href="css/main.css" />
     <!--  -->
     <script
       src="https://kit.fontawesome.com/585801ee80.js"
@@ -315,6 +317,63 @@
       </div>
     </div>
 
+    <!-- Modal Share -->
+    <div
+      class="modal fade"
+      id="share-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">Compartir</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fontCarosExtraLight">
+              Con tu ayuda lograremos que más personas conozcan sobre nuestros servicios.
+            </p>
+
+            <p class="fontCarosExtraLight text-catalina-blue">
+              Comparte este sitio con tus amigos o familiares.
+            </p>
+
+            <div class="content-social">
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-facebook-messenger" style="color: #00b2ff"></i>
+                </div>
+                <h5 class="text-bg">Messenger</h5>
+              </a>
+
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-whatsapp" style="color: #00bb2d"></i>
+                </div>
+                <h5 class="text-bg">WhatsApp</h5>
+              </a>
+
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-twitter" style="color: #00acee"></i>
+                </div>
+                <h5 class="text-bg">Twitter</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal Register -->
     <div
       class="modal fade"
@@ -485,5 +544,6 @@
     ></script>
 
     <script src="js/btn-float.js"></script>
+    <script src="js/quantityInput.js"></script>
   </body>
 </html>

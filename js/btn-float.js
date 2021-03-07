@@ -1,6 +1,7 @@
 // OJO MUESTRA MODAL COMPARTIR
 $(document).ready(function () {
   // $('#share-modal').modal('show');
+  $('#HideComent').hide();
 });
 
 // BTN TOGGLE SOCIAL
@@ -28,4 +29,18 @@ $('#recuperar').click(function () {
   $('#loginModal').modal('hide');
   $('#modalRegister').modal('hide');
   $('#passwordModal').modal('show');
+});
+
+// Show Coments
+// Show
+$('#ShowComent').click(function () {
+  $('#comentarios').collapse('show');
+  $('#ShowComent').hide();
+  $('#HideComent').show();
+});
+// Hide
+$('#HideComent').click(function () {
+  $('#comentarios').collapse('hide');
+  $('#HideComent').hide();
+  $('#ShowComent').show();
 });

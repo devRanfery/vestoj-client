@@ -406,6 +406,10 @@ body {
 }
 /* ------------------------------------------------------------------------------- */
 /* Phofile */
+#nav-two-responsive {
+  display: none;
+}
+
 .textDecorationNone {
   text-decoration: none;
 }
@@ -428,11 +432,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   border-radius: 50%;
   background-color: rgb(6, 56, 115);
   position: relative;
   top: 50px;
+}
+
+.circleCardResponsive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: rgb(6, 56, 115);
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+  padding: 0px;
+}
+
+.nav-direct {
+  text-align: center;
+  text-decoration: none;
 }
 
 /* START MEDIAS QUERYS */
@@ -470,6 +497,15 @@ body {
   /* order */
   .priceShoppingOrder {
     flex-direction: column;
+  }
+
+  /* Profile */
+  #nav-two {
+    display: none;
+  }
+
+  #nav-two-responsive {
+    display: block;
   }
 }
 

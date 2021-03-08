@@ -315,6 +315,24 @@ body {
   margin: 15px 0px;
 }
 
+/* Modal order confirmation */
+.title-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.check {
+  font-size: 40px;
+  margin: 0px 10px 8px 0px;
+  color: rgb(52, 172, 191);
+}
+
+.textPedido {
+  text-align: center;
+  font-weight: bold;
+}
+
 /* MODAL SHARE */
 .content-social {
   display: flex;

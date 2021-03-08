@@ -1,6 +1,6 @@
 // OJO MUESTRA MODAL COMPARTIR
 $(document).ready(function () {
-  // $('#share-modal').modal('show');
+  $('#order-confirmation-modal').modal('show');
   $('#HideComent').hide();
 });
 

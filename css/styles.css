@@ -427,6 +427,33 @@ body {
   color: #fff;
 }
 /* ------------------------------------------------------------------------------- */
+/* Order */
+
+.content-btn-pagar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn-pagar {
+  width: 150px;
+  background-color: rgb(6, 56, 115);
+  border: 0px;
+  border-radius: 50px;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.priceShoppingOrder {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px 30px 0px;
+}
+
+.inputOrder {
+  margin-bottom: 10px;
+}
+
 /* START MEDIAS QUERYS */
 @media only screen and (max-width: 600px) {
   /* Services */
@@ -440,7 +467,7 @@ body {
     font-size: 14px;
   }
   .card-services {
-    margin: 20px;
+    border-radius: 0px;
   }
   .buy {
     width: 200px;
@@ -453,6 +480,11 @@ body {
     display: flex;
     align-items: normal;
     margin: 0px 0px 20px 0px;
+  }
+
+  /* order */
+  .priceShoppingOrder {
+    flex-direction: column;
   }
 }
 

@@ -215,12 +215,12 @@
     <!-- Total Shopping - Promotion -->
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
           <div class="promotionCode">
             <h4 class="text-catalina-blue fontCarosBold" style="margin: 10px">
               Codigo promoción:
             </h4>
-            <input class="form-control" type="text" />
+            <input class="form-control inputPromotion" type="text" />
             <button class="fontCarosBold btn-blue-pelarous" style="margin: 10px">
               Continuar
             </button>
@@ -246,170 +246,184 @@
     <!-- End Total Shopping - Promotion -->
 
     <!-- Date Collections -->
-    <div class="bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h4 class="fontCarosBold m-top">
-              Selecciona las fechas en que recogeremos tu ropa y la entregaremos limpia.
-            </h4>
-            <h5 class="fontCarosExtraLight text-bg">
-              Ten en cuenta que el servicio de lavanderia es de Lunes a Viernes 08:00 AM
-              -06:30 PM y Sabados <br />
-              de 08:00 AM - 03:00 PM.
-            </h5>
-          </div>
+    <!-- <div class="bg-white"> -->
+    <div class="container card-services">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4 class="fontCarosBold">
+            Selecciona las fechas en que recogeremos tu ropa y la entregaremos limpia.
+          </h4>
+          <h5 class="fontCarosExtraLight text-bg">
+            Ten en cuenta que el servicio de lavanderia es de Lunes a Viernes 08:00 AM
+            -06:30 PM y Sabados <br />
+            de 08:00 AM - 03:00 PM.
+          </h5>
         </div>
-        <br />
-        <div class="row">
-          <div class="col-lg-6">
-            <h4 class="fontCarosBold text-catalina-blue">Fecha de recolección</h4>
-            <div class="dateCollection">
-              <div class="form-group">
-                <input
-                  class="form-control"
-                  type="datetime-local"
-                  value="2011-08-19T13:45:00"
-                  id="example-datetime-local-input"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <h4 class="fontCarosBold text-catalina-blue">Fecha de entrega</h4>
-            <div class="dateCollection">
-              <div class="form-group">
-                <input
-                  class="form-control"
-                  type="datetime-local"
-                  value="2011-08-19T13:45:00"
-                  id="example-datetime-local-input"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
       </div>
+      <br />
+      <div class="row">
+        <div class="col-lg-6">
+          <h4 class="fontCarosBold text-catalina-blue">Fecha de recolección</h4>
+          <div class="dateCollection">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="datetime-local"
+                value="2011-08-19T13:45:00"
+                id="example-datetime-local-input"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="fontCarosBold text-catalina-blue">Fecha de entrega</h4>
+          <div class="dateCollection">
+            <div class="form-group">
+              <input
+                class="form-control"
+                type="datetime-local"
+                value="2011-08-19T13:45:00"
+                id="example-datetime-local-input"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
     </div>
+    <!-- </div> -->
     <!-- End Date Collections -->
 
     <!-- Address -->
-    <div class="bg-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h4 class="fontCarosBold">Selecciona donde recogeremos tu ropa.</h4>
-            <h5 class="fontCarosExtraLight text-bg">
-              El lugar de recoleccion sera el lugar al cual entregaremos de regreso tus
-              prendas limpias.
-            </h5>
-          </div>
+    <!-- <div class="bg-white"> -->
+    <div class="container card-services">
+      <div class="row">
+        <div class="col-lg-12">
+          <h4 class="fontCarosBold">Selecciona donde recogeremos tu ropa.</h4>
+          <h5 class="fontCarosExtraLight text-bg">
+            El lugar de recoleccion sera el lugar al cual entregaremos de regreso tus
+            prendas limpias.
+          </h5>
         </div>
+      </div>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="content-btn-add">
-              <button class="fontCarosBold btn-blue-pelarous" style="margin-left: 15px">
-                <i class="fas fa-plus"></i> Agregar
-              </button>
-            </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-btn-add">
+            <button class="fontCarosBold btn-blue-pelarous" style="margin-left: 15px">
+              <i class="fas fa-plus"></i> Agregar
+            </button>
           </div>
         </div>
-        <br />
-        <div class="row">
-          <div class="col-xs-12 col-lg-12" style="overflow: scroll">
-            <table class="table table-responsive table-bordered border-primary">
-              <thead class="bg-catalina-blue text-white fontCarosExtraLight">
-                <tr>
-                  <th scope="col ">Preferente</th>
-                  <th scope="col">Domicilio</th>
-                  <th scope="col">Editar</th>
-                  <th scope="col">Seleccionar</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="fontCarosExtraLight text-bg"></th>
-                  <td class="fontCarosExtraLight text-bg">
-                    Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul -
-                    Telefono 7821094880
-                  </td>
-                  <td class="fontCarosExtraLight text-bg text-center">
-                    <i class="far fa-edit"></i>
-                  </td>
-                  <td class="fontCarosExtraLight text-bg text-center">
-                    <i class="far fa-check-circle"></i>
-                  </td>
-                </tr>
-                <tr>
-                  <th class="fontCarosExtraLight text-bg">Preferencia</th>
-                  <td class="fontCarosExtraLight text-bg">
-                    Villanueva 32 #109 - Nuevo retorno- 93250 - NA - #34 - NA - Poza rica-
-                    Telefono 783...
-                  </td>
-                  <td class="fontCarosExtraLight text-bg text-center">
-                    <i class="far fa-edit"></i>
-                  </td>
-                  <td class="fontCarosExtraLight text-bg text-center">
-                    <i class="far fa-check-circle"></i>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-12" style="overflow: scroll">
+          <table class="table table-responsive table-bordered border-primary">
+            <thead class="bg-catalina-blue text-white fontCarosExtraLight">
+              <tr>
+                <th scope="col ">Preferente</th>
+                <th scope="col">Domicilio</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Seleccionar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="fontCarosExtraLight text-bg"></th>
+                <td class="fontCarosExtraLight text-bg">
+                  Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
+                  7821094880
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-edit"></i>
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-check-circle"></i>
+                </td>
+              </tr>
+              <tr>
+                <th class="fontCarosExtraLight text-bg">Preferencia</th>
+                <td class="fontCarosExtraLight text-bg">
+                  Villanueva 32 #109 - Nuevo retorno- 93250 - NA - #34 - NA - Poza rica-
+                  Telefono 783...
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-edit"></i>
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-check-circle"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h5 class="fontCarosBold text-catalina-blue">Dirección Seleccionada:</h5>
+        </div>
+        <div class="col-lg-12">
+          <div class="form-floating">
+            <textarea class="form-control" style="height: 100px"></textarea>
+            <label for="floatingTextarea2"
+              >Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
+              7821094880</label
+            >
           </div>
         </div>
-        <br />
-        <div class="row">
-          <div class="col-lg-12">
-            <h5 class="fontCarosBold text-catalina-blue">Dirección Seleccionada:</h5>
-          </div>
-          <div class="col-lg-12">
-            <div class="form-floating">
-              <textarea class="form-control" style="height: 100px"></textarea>
-              <label for="floatingTextarea2"
-                >Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
-                7821094880</label
-              >
-            </div>
-          </div>
-        </div>
-        <br />
-        <div class="row">
-          <div class="col-lg-12 details">
-            <h4 class="fontCarosBold m-1">Añadir detalles</h4>
-            <div class="positionBtn">
-              <button class="btnDetalles text-center m-1" type="button" id="ShowComent">
-                <i class="fas fa-plus"></i>
-              </button>
-              <button class="btnDetalles text-center m-1" type="button" id="HideComent">
-                <i class="fas fa-minus"></i>
-              </button>
-            </div>
+      </div>
+      <br />
+    </div>
+    <!-- </div> -->
+
+    <!-- Details -->
+    <div class="container card-services">
+      <div class="row">
+        <div class="col-lg-12 details">
+          <h4 class="fontCarosBold m-1">Añadir detalles</h4>
+          <div class="positionBtn">
+            <button class="btnDetalles text-center m-1" type="button" id="ShowComent">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="btnDetalles text-center m-1" type="button" id="HideComent">
+              <i class="fas fa-minus"></i>
+            </button>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-12 m-bottom">
-            <div class="collapse" id="comentarios">
-              <div class="card card-body">
-                <h5 class="fontCarosExtraLight text-bg">
-                  Agrega los detalles correspondientes para continuar, por ejemplo si tu
-                  prenda tiene una mancha, si elegiste un servicio recuerda que tienes que
-                  dejar reparada la ropa que se tiene que lavar y planchar. Estamos para
-                  atenderte cualquier detalle aquí con tus prendas aqui nos los puedes
-                  escribir.
-                </h5>
-                <div class="form-floating">
-                  <textarea class="form-control" style="height: 100px"></textarea>
-                  <label class="fontCarosExtraLight" for="floatingTextarea2"
-                    >Agregar un comentario aqui...</label
-                  >
-                </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="collapse" id="comentarios">
+            <div class="card card-body">
+              <h5 class="fontCarosExtraLight text-bg">
+                Agrega los detalles correspondientes para continuar, por ejemplo si tu
+                prenda tiene una mancha, si elegiste un servicio recuerda que tienes que
+                dejar reparada la ropa que se tiene que lavar y planchar. Estamos para
+                atenderte cualquier detalle aquí con tus prendas aqui nos los puedes
+                escribir.
+              </h5>
+              <div class="form-floating">
+                <textarea class="form-control" style="height: 100px"></textarea>
+                <label class="fontCarosExtraLight" for="floatingTextarea2"
+                  >Agregar un comentario aqui...</label
+                >
               </div>
             </div>
-
-            <button class="btnRequest fontCarosBold">Solicitar</button>
           </div>
+          <!-- <button class="btnRequest fontCarosBold">Solicitar</button> -->
+        </div>
+      </div>
+    </div>
+    <!-- End Details -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 pb-3">
+          <button class="btnRequest fontCarosBold">Solicitar</button>
         </div>
       </div>
     </div>
@@ -777,7 +791,9 @@
                 Te hemos enviado un correo electronico con los datos de tu pedido.
               </p>
 
-              <button class="fontCarosBold btn-blue-pelarous">Aceptar</button>
+              <button class="fontCarosBold btn-blue-pelarous" data-bs-dismiss="modal">
+                Aceptar
+              </button>
             </div>
           </div>
         </div>

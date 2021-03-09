@@ -150,60 +150,169 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Text Service -->
+    <!-- Text Addresses -->
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center p-3">
-          <h3 class="fontCarosExtraLight text-bg">Los mejores precios</h3>
-          <h1 class="fontCarosBold text-catalina-blue">Servicios Disponibles</h1>
+          <h1 class="fontCarosBold text-catalina-blue">Direcciones</h1>
         </div>
       </div>
     </div>
 
-    <!-- Services -->
-    <div class="container">
-      <div class="row card-services">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-2 content-image-service">
-          <div class="image-service">
-            <img class="icon-service" src="image/Canasta.svg" alt="" />
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 text-service-center">
-          <div class="text-service">
-            <h1 class="text-catalina-blue fontCarosBold">Lavado por kilo</h1>
-            <p class="text-bg fontCarosExtraLight" style="font-size: 19px">
-              Ingresa la cantidad de peso en kilos estamados de tu ropa
-            </p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 service-center">
-          <div class="text-center-number">
-            <div class="price btn-price fontCarosBold text-catalina-blue">$ 35.00</div>
-            <div class="text-bg">Precio/U</div>
-          </div>
-
-          <div class="text-center-number">
-            <div class="total btn-price fontCarosBold text-catalina-blue">$ 175.00</div>
-            <div class="text-bg">Total</div>
-          </div>
-
-          <div class="text-center-number">
-            <div class="quantity fontCarosBold text-catalina-blue">
-              <div class="btnQuantity" id="min"><i class="fas fa-minus"></i></div>
-              <input
-                class="fontCarosBold text-catalina-blue"
-                type="number"
-                id="cantidadInput"
-                value="0"
-              />
-              <div class="btnQuantity" id="plus"><i class="fas fa-plus"></i></div>
+    <!-- 
+    Nota: CardNav y CardNavMobile son 2 barras de navegacion para los enlaces
+    Historial, Pedido y Direcciones
+    -->
+    <!-- CardNav -->
+    <div class="container" id="nav-two">
+      <div class="row">
+        <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
+          <a class="textDecorationNone" href="history.html">
+            <div class="centerCard">
+              <div class="circleCard">
+                <img src="image/history.svg" width="80px" height="80px" alt="" />
+              </div>
+              <div class="card-nav">
+                <p class="fontCarosBold text-black" style="font-size: 25px">
+                  Mi historial
+                </p>
+              </div>
             </div>
-            <div class="text-bg">Cantidad</div>
-          </div>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
+          <a class="textDecorationNone" href="order.html">
+            <div class="centerCard">
+              <div class="circleCard">
+                <img src="image/delivery-man.svg" width="80px" height="80px" alt="" />
+              </div>
+              <div class="card-nav">
+                <p class="fontCarosBold text-black" style="font-size: 25px">Mi Pedido</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
+          <a class="textDecorationNone" href="addresses.html">
+            <div class="centerCard">
+              <div class="circleCard">
+                <img src="image/placeholder.svg" width="80px" height="80px" alt="" />
+              </div>
+              <div class="card-nav">
+                <p class="fontCarosBold text-black" style="font-size: 25px">
+                  Direcciones
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br />
+    </div>
+    <!-- End CardNav -->
+
+    <!-- CardNavMobile  -->
+    <div class="container" id="nav-two-responsive">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="navegacion">
+            <li class="nav-item">
+              <div class="circleCardResponsive">
+                <img src="image/history.svg" width="50px" height="50px" alt="" />
+              </div>
+              <a class="nav-direct fontCarosBold text-black" href="history.html"
+                >Mi Historial</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="circleCardResponsive">
+                <img src="image/delivery-man.svg" width="50px" height="50px" alt="" />
+              </div>
+              <a class="nav-direct fontCarosBold text-black" href="order.html"
+                >Mi Pedido</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="circleCardResponsive">
+                <img src="image/placeholder.svg" width="50px" height="50px" alt="" />
+              </div>
+              <a class="nav-direct fontCarosBold text-black" href="addresses.html"
+                >Direcciones</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <!-- End Services -->
+    <!-- End CardNavMobile  -->
+
+    <!-- Button Add Addresses -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <button class="fontCarosBold btn-blue-pelarous">Agregar Dirección</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Table Of Addresses -->
+    <div class="container card-services">
+      <div class="row">
+        <div class="col-xs-12 col-lg-12" style="overflow: scroll">
+          <table class="table table-responsive table-bordered border-primary">
+            <thead class="bg-catalina-blue text-white fontCarosExtraLight">
+              <tr>
+                <th scope="col ">Preferente</th>
+                <th scope="col">Domicilio</th>
+                <th scope="col">Editar</th>
+                <th scope="col">Eliminar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="fontCarosExtraLight text-bg"></th>
+                <td class="fontCarosExtraLight text-bg">
+                  Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
+                  7821094880
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-edit"></i>
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <th class="fontCarosExtraLight text-bg">Preferencia</th>
+                <td class="fontCarosExtraLight text-bg">
+                  Villanueva 32 #109 - Nuevo retorno- 93250 - NA - #34 - NA - Poza rica-
+                  Telefono 783...
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-edit"></i>
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+              <tr>
+                <th class="fontCarosExtraLight text-bg"></th>
+                <td class="fontCarosExtraLight text-bg">
+                  Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
+                  7821094880
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-edit"></i>
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <i class="far fa-trash-alt"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
     <!-- Modal Login -->
     <div

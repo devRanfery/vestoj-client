@@ -101,7 +101,7 @@
                 Cuenta
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">A</a></li>
+                <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
                 <li><a class="dropdown-item" href="#">B</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
@@ -159,11 +159,15 @@
       </div>
     </div>
 
+    <!-- 
+    Nota: CardNav y CardNavMobile son 2 barras de navegacion para los enlaces
+    Historial, Pedido y Direcciones
+    -->
     <!-- CardNav -->
     <div class="container" id="nav-two">
       <div class="row">
         <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
-          <a class="textDecorationNone" href="#">
+          <a class="textDecorationNone" href="history.html">
             <div class="centerCard">
               <div class="circleCard">
                 <img src="image/history.svg" width="80px" height="80px" alt="" />
@@ -177,7 +181,7 @@
           </a>
         </div>
         <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
-          <a class="textDecorationNone" href="#">
+          <a class="textDecorationNone" href="order.html">
             <div class="centerCard">
               <div class="circleCard">
                 <img src="image/delivery-man.svg" width="80px" height="80px" alt="" />
@@ -189,7 +193,7 @@
           </a>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
-          <a class="textDecorationNone" href="#">
+          <a class="textDecorationNone" href="addresses.html">
             <div class="centerCard">
               <div class="circleCard">
                 <img src="image/placeholder.svg" width="80px" height="80px" alt="" />
@@ -207,7 +211,7 @@
     </div>
     <!-- End CardNav -->
 
-    <!-- NAVBAR  -->
+    <!-- CardNavMobile  -->
     <div class="container" id="nav-two-responsive">
       <div class="row">
         <div class="col-lg-12">
@@ -216,24 +220,31 @@
               <div class="circleCardResponsive">
                 <img src="image/history.svg" width="50px" height="50px" alt="" />
               </div>
-              <a class="nav-direct" href="#">Mi Historial</a>
+              <a class="nav-direct fontCarosBold text-black" href="history.html"
+                >Mi Historial</a
+              >
             </li>
             <li class="nav-item">
               <div class="circleCardResponsive">
                 <img src="image/delivery-man.svg" width="50px" height="50px" alt="" />
               </div>
-              <a class="nav-direct" href="#">Mi Pedido</a>
+              <a class="nav-direct fontCarosBold text-black" href="order.html"
+                >Mi Pedido</a
+              >
             </li>
             <li class="nav-item">
               <div class="circleCardResponsive">
                 <img src="image/placeholder.svg" width="50px" height="50px" alt="" />
               </div>
-              <a class="nav-direct" href="#">Direcciones</a>
+              <a class="nav-direct fontCarosBold text-black" href="addresses.html"
+                >Direcciones</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </div>
+    <!-- End CardNavMobile  -->
 
     <!-- My Phofile -->
     <div class="container">

@@ -250,7 +250,24 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <button class="fontCarosBold btn-blue-pelarous">Agregar Dirección</button>
+          <!-- <button
+            class="fontCarosBold btn-blue-pelarous"
+            data-bs-toggle="collapse"
+            href="#AddAddress"
+            role="button"
+            aria-expanded="false"
+            aria-controls="AddAddress"
+          >
+            Agregar Dirección
+          </button> -->
+
+          <button
+            class="fontCarosBold btn-blue-pelarous"
+            type="button"
+            id="btnAddAddress"
+          >
+            Agregar Dirección
+          </button>
         </div>
       </div>
     </div>
@@ -313,6 +330,81 @@
         </div>
       </div>
     </div>
+
+    <!-- Form Add Addresses -->
+    <div id="contentAddAddress">
+      <div class="container card-services">
+        <div class="row">
+          <div class="col-lg-12">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue"
+                  >Edificio:</label
+                >
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue"
+                  >Departamento:</label
+                >
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue"
+                  >Piso - Habitación:</label
+                >
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue">Calle:</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue">Número:</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue"
+                  >Colonia:</label
+                >
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue"
+                  >Código Postal:</label
+                >
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <label class="form-label fontCarosBold text-catalina-blue"
+                  >Telefono:</label
+                >
+                <input type="text" class="form-control" required />
+              </div>
+              <div
+                class="col-md-4"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  flex-direction: column;
+                "
+              >
+                <label class="form-label fontCarosBold text-catalina-blue"
+                  >Preferencia:</label
+                >
+                <input class="form-check-input" type="checkbox" value="" />
+              </div>
+              <div class="col-lg-12">
+                <button class="fontCarosBold btn-blue-pelarous">Guardar</button>
+                <button class="fontCarosBold btn-red">Cancelar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Form Add Addresses -->
 
     <!-- Modal Login -->
     <div
@@ -699,5 +791,6 @@
 
     <script src="js/btn-float.js"></script>
     <script src="js/quantityInput.js"></script>
+    <script src="js/scrollAddress.js"></script>
   </body>
 </html>

@@ -333,8 +333,17 @@ body {
   border: 0px;
   color: #fff;
 }
+
 .btn-blue-pelarous:hover {
   background-color: rgb(6, 56, 115);
+}
+
+.btn-red {
+  background-color: #c2272d;
+  padding: 6px 20px;
+  border-radius: 50px;
+  border: 0px;
+  color: #fff;
 }
 
 .priceShopping {
@@ -479,7 +488,6 @@ body {
   }
   .card-services {
     border-radius: 0px;
-    padding: 2px;
   }
   .buy {
     width: 200px;

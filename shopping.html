@@ -59,7 +59,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="image/logo-black.svg" width="150px" alt="" />
         </a>
         <button
@@ -104,7 +104,15 @@
                 <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
                 <li><a class="dropdown-item" href="#">B</a></li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+                <li>
+                  <a
+                    class="nav-link fontCarosExtraLight"
+                    data-bs-toggle="modal"
+                    data-bs-target="#logout-modal"
+                    href="#"
+                    >Cerrar Sesión</a
+                  >
+                </li>
               </ul>
             </li>
 
@@ -440,7 +448,9 @@
         <div class="modal-content">
           <div class="modal-header">
             <div class="titulo">
-              <h5 class="modal-titulo text-catalina-blue fontCarosBold">Inicar Sesion</h5>
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold text-center">
+                Iniciar Sesion
+              </h5>
             </div>
             <button
               type="button"

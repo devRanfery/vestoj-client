@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Styles Css -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Styles Main Css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!--  -->
+    <script
+      src="https://kit.fontawesome.com/585801ee80.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Vestoj</title>
+  </head>
+  <body>
+    <!--Button asesoria en linea -->
+    <a class="btn-flotante" id="btn-dialog-social"
+      ><img src="image/burbuja-de-dialogo.svg" width="50px" alt=""
+    /></a>
+
+    <!-- Button close -->
+    <a class="close" id="btn-dialog-social-ocultar"
+      ><img src="image/close.svg" width="35px" alt=""
+    /></a>
+
+    <!-- Content Social -->
+    <div class="container-social">
+      <a href="#" class="btn-social"
+        ><i class="fab fa-whatsapp" style="color: #25d366"></i
+      ></a>
+      <a href="#" class="btn-social"
+        ><i class="fab fa-facebook-messenger" style="color: #0078ff"></i
+      ></a>
+      <a href="#" class="btn-social"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <!-- Carrito de compras -->
+    <!-- <div class="buy">
+      <p class="fontCarosExtraLight">
+        Tu canasta contiene: <span class="fontCarosBold">7 Servicios</span>
+      </p>
+      <p class="fontCarosExtraLight">
+        Total estimado: <span class="fontCarosBold">$205.00</span>
+      </p>
+      <button class="btn-pay fontCarosBold text-catalina-blue">Continuar</button>
+    </div> -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo-black.svg" width="150px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link fontCarosExtraLight" aria-current="page" href="#"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fontCarosExtraLight"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                href="#"
+                >Iniciar Sesión</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fontCarosExtraLight dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Cuenta
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
+                <li><a class="dropdown-item" href="#">B</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="nav-link fontCarosExtraLight"
+                    data-bs-toggle="modal"
+                    data-bs-target="#logout-modal"
+                    href="#"
+                    >Cerrar Sesión</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link fontCarosExtraLight dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Compartir
+              </a>
+              <ul
+                class="dropdown-menu"
+                id="DropdownSocial"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    <i class="fab fa-facebook" style="color: #3b5998"></i>
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    <i class="fab fa-whatsapp" style="color: #25d366"></i>
+                    WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-white" href="#">
+                    <i class="fab fa-twitter-square" style="color: #00acee"></i>
+                    Twitter
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Text Addresses -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center p-3">
+          <h1 class="fontCarosBold text-catalina-blue">Mi Historial</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    Nota: CardNav y CardNavMobile son 2 barras de navegacion para los enlaces
+    Historial, Pedido y Direcciones
+    -->
+    <!-- CardNav -->
+    <div class="container" id="nav-two">
+      <div class="row">
+        <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
+          <a class="textDecorationNone" href="history.html">
+            <div class="centerCard">
+              <div class="circleCard">
+                <img src="image/history.svg" width="80px" height="80px" alt="" />
+              </div>
+              <div class="card-nav">
+                <p class="fontCarosBold text-black" style="font-size: 25px">
+                  Mi historial
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-3 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
+          <a class="textDecorationNone" href="order.html">
+            <div class="centerCard">
+              <div class="circleCard">
+                <img src="image/delivery-man.svg" width="80px" height="80px" alt="" />
+              </div>
+              <div class="card-nav">
+                <p class="fontCarosBold text-black" style="font-size: 25px">Mi Pedido</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4" style="text-align: center">
+          <a class="textDecorationNone" href="addresses.html">
+            <div class="centerCard">
+              <div class="circleCard">
+                <img src="image/placeholder.svg" width="80px" height="80px" alt="" />
+              </div>
+              <div class="card-nav">
+                <p class="fontCarosBold text-black" style="font-size: 25px">
+                  Direcciones
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <br />
+    </div>
+    <!-- End CardNav -->
+
+    <!-- CardNavMobile  -->
+    <div class="container" id="nav-two-responsive">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul class="navegacion">
+            <li class="nav-item">
+              <div class="circleCardResponsive">
+                <img src="image/history.svg" width="50px" height="50px" alt="" />
+              </div>
+              <a class="nav-direct fontCarosBold text-black" href="history.html"
+                >Mi Historial</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="circleCardResponsive">
+                <img src="image/delivery-man.svg" width="50px" height="50px" alt="" />
+              </div>
+              <a class="nav-direct fontCarosBold text-black" href="order.html"
+                >Mi Pedido</a
+              >
+            </li>
+            <li class="nav-item">
+              <div class="circleCardResponsive">
+                <img src="image/placeholder.svg" width="50px" height="50px" alt="" />
+              </div>
+              <a class="nav-direct fontCarosBold text-black" href="addresses.html"
+                >Direcciones</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End CardNavMobile  -->
+
+    <!-- Button Add Addresses -->
+    <div class="container card-services">
+      <br />
+      <div class="row">
+        <div class="col-md-5 col-lg-5">
+          <h5 class="fontCarosBold text-catalina-blue">Fecha Inicio:</h5>
+          <div class="dateCollection">
+            <div class="form-group">
+              <input
+                class="form-control inputOrder"
+                type="datetime-local"
+                value="2011-08-19T13:45:00"
+                id="example-datetime-local-input"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-5">
+          <h5 class="fontCarosBold text-catalina-blue">Fecha Fin:</h5>
+          <div class="dateCollection">
+            <div class="form-group">
+              <input
+                class="form-control inputOrder"
+                type="datetime-local"
+                value="2011-08-19T13:45:00"
+                id="example-datetime-local-input"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-2 col-lg-2">
+          <div class="inputSearch">
+            <div class="form-group">
+              <button class="btn btn-search" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-search" type="submit">
+                <i class="fas fa-sync-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"></div>
+      <br />
+      <div class="row">
+        <div class="col-xs-12 col-lg-12" style="overflow: auto">
+          <table class="table table-responsive table-bordered border-primary">
+            <thead class="bg-catalina-blue text-white fontCarosExtraLight">
+              <tr>
+                <th scope="col">Detalles</th>
+                <th scope="col">Num. Pedido</th>
+                <th scope="col">Fecha Rec.</th>
+                <th scope="col">Fecha Ent.</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Monto</th>
+                <th scope="col">Descuento</th>
+                <th scope="col">Total</th>
+                <th scope="col">Domicilio</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Pago</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  <div class="btnMoreDetails">
+                    <i class="fas fa-ellipsis-h"></i>
+                  </div>
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">#003212</td>
+                <td class="fontCarosExtraLight text-bg text-center">12/02/2021</td>
+                <td class="fontCarosExtraLight text-bg text-center">14/02/2021</td>
+                <td class="fontCarosExtraLight text-bg text-center">Recolectado</td>
+                <td class="fontCarosExtraLight text-bg text-center">$175.00</td>
+                <td class="fontCarosExtraLight text-bg text-center">$0.00</td>
+                <td class="fontCarosExtraLight text-bg text-center">$175.00</td>
+                <td class="fontCarosExtraLight text-bg text-center">
+                  Villanueva 32 #109 - ...
+                </td>
+                <td class="fontCarosExtraLight text-bg text-center">Activo</td>
+                <td class="fontCarosExtraLight text-bg text-center">Not Registered</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold text-center">
+                Iniciar Sesion
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-modal-login">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Inicia ahora, comienza a realizar tus pedidos. ¿No tienes cuenta?
+                  <span>
+                    <a
+                      class="fontCarosExtraLight text-decoration"
+                      id="viewRegister"
+                      href="#"
+                      >Crea tu cuenta ahora</a
+                    ></span
+                  >
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control bordes-input"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Contraseña"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">
+                  Iniciar Sesión
+                </button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Olvidaste tu contraseña, recuperala
+                  <span>
+                    <a class="fontCarosExtraLight text-decoration" id="recuperar" href="#"
+                      >aqui</a
+                    ></span
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Logout -->
+    <div
+      class="modal fade"
+      id="logout-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="titulo">
+              <h5 class="modal-titulo text-bg fontCarosBold">Cerrar Sesion</h5>
+            </div>
+            <br />
+            ¿Estas seguro que quieres cerrar tu sesión?
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Cerrar Sesión</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Share -->
+    <div
+      class="modal fade"
+      id="share-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">Compartir</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fontCarosExtraLight">
+              Con tu ayuda lograremos que más personas conozcan sobre nuestros servicios.
+            </p>
+
+            <p class="fontCarosExtraLight text-catalina-blue">
+              Comparte este sitio con tus amigos o familiares.
+            </p>
+
+            <div class="content-social">
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-facebook-messenger" style="color: #00b2ff"></i>
+                </div>
+                <h5 class="text-bg">Messenger</h5>
+              </a>
+
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-whatsapp" style="color: #00bb2d"></i>
+                </div>
+                <h5 class="text-bg">WhatsApp</h5>
+              </a>
+
+              <a href="#" class="content-share">
+                <div class="btnShare">
+                  <i class="fab fa-twitter" style="color: #00acee"></i>
+                </div>
+                <h5 class="text-bg">Twitter</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div
+      class="modal fade"
+      id="modalRegister"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      style="overflow-y: scroll"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">Registrate</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-Modal">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  ¡Unase a Vestoj! Configuremos tu cuenta.
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Primer apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Segundo apellido"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control bordes-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Telefono"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Contraseña"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Confirmar contraseña"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">Registrarse</button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Al hacer clic en registrarse, acepta los termino de privacidad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Password -->
+    <div
+      class="modal fade"
+      id="passwordModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5
+                class="modal-titulo text-catalina-blue fontCarosBold text-center"
+                style="font-size: 30px"
+              >
+                Recuperar Contraseña
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-modal-pass">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Olvidaste tu contraseña, no te preocupes.
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control bordes-input"
+                    aria-describedby="emailHelp"
+                    placeholder="Correo electronico"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">Recuperar</button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight" style="font-size: 12px">
+                  Enviaremos un correo con tus datos para que puedas volver a iniciar
+                  sesión.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Order  Confirmation-->
+    <div
+      class="modal fade"
+      id="order-confirmation-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="textPedido">
+              <div class="title-order">
+                <i class="check fas fa-check-circle"></i>
+                <h2 class="text-catalina-blue fontCarosBold">Pedido confirmado</h2>
+              </div>
+
+              <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
+                Puedes verificar el estado de tu pedido en el siguiente enlace:
+              </p>
+              <a class="textPedido fontCarosExtraLight" href="#">Mi pedido</a>
+
+              <br />
+              <p class="textPedido fontCarosExtraLight text-catalina-blue">
+                Tu numero de pedido es: <strong>#002934</strong>
+              </p>
+              <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
+                Te hemos enviado un correo electronico con los datos de tu pedido.
+              </p>
+
+              <button class="fontCarosBold btn-blue-pelarous">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/btn-float.js"></script>
+    <script src="js/quantityInput.js"></script>
+    <script src="js/scrollAddress.js"></script>
+  </body>
+</html>

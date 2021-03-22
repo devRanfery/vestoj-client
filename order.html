@@ -76,7 +76,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fontCarosExtraLight" aria-current="page" href="#"
+              <a
+                class="nav-link fontCarosExtraLight"
+                aria-current="page"
+                href="index.html"
                 >Servicios</a
               >
             </li>
@@ -102,7 +105,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">B</a></li>
+                <li><a class="dropdown-item" href="shopping.html">Canasta</a></li>
+                <li><a class="dropdown-item" href="order.html">Mi pedido</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
@@ -137,18 +141,21 @@
                     <i class="fab fa-facebook" style="color: #3b5998"></i>
                     Facebook
                   </a>
+                  <hr class="hrSocial" />
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
                     <i class="fab fa-whatsapp" style="color: #25d366"></i>
                     WhatsApp
                   </a>
+                  <hr class="hrSocial" />
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
                     <i class="fab fa-twitter-square" style="color: #00acee"></i>
                     Twitter
                   </a>
+                  <hr class="hrSocial" />
                 </li>
               </ul>
             </li>
@@ -166,13 +173,18 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6 text-left">
+        <div class="col-lg-10 text-left">
           <h4 class="fontCarosBold">
-            Tu canasta contiene:
-            <span class="text-catalina-blue">3 Servicios</span>
+            Numero Pedido:
+            <span class="text-catalina-blue">#001054</span>
           </h4>
+          <p class="fontCarosExtraLight text-bg">
+            Te recordamos que es importante para nosotros darte el mejor servicio y te
+            pedimos si tienes un servicio de planchado nos dejes en un paquete
+            independiente la ropa que plancharemos.
+          </p>
         </div>
-        <div class="col-lg-6 content-btn-pagar">
+        <div class="col-lg-2 content-btn-pagar">
           <button class="btn-pagar fontCarosBold">Pagar</button>
         </div>
       </div>
@@ -227,6 +239,16 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div class="priceShoppingOrder" style="justify-content: flex-start">
+            <h4 class="text-catalina-blue fontCarosBold" style="margin-right: 20px">
+              Codigo de Promocion: <span class="text-black">------</span>
+            </h4>
+            <h4 class="text-catalina-blue fontCarosBold">
+              Tarifa de recoleccion: <span class="text-black">$ 40.00</span>
+            </h4>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="priceShoppingOrder">
             <h4 class="text-catalina-blue fontCarosBold">
               SubTotal: <span class="text-black">$ 235.00</span>
@@ -245,11 +267,11 @@
 
     <!-- Date Collections -->
 
-    <div class="container card-services">
+    <div class="container">
       <br />
       <div class="row">
-        <div class="col-lg-6">
-          <h5 class="fontCarosBold text-catalina-blue">Fecha de recolección:</h5>
+        <div class="col-lg-6 mb-1">
+          <h5 class="fontCarosBold text-catalina-blue">Recolección:</h5>
           <div class="dateCollection">
             <div class="form-group">
               <input
@@ -261,8 +283,8 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
-          <h5 class="fontCarosBold text-catalina-blue">Fecha de entrega:</h5>
+        <div class="col-lg-6 mb-1">
+          <h5 class="fontCarosBold text-catalina-blue">Entrega:</h5>
           <div class="dateCollection">
             <div class="form-group">
               <input
@@ -275,13 +297,42 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-lg-7 mb-1">
+          <h5 class="fontCarosBold text-catalina-blue">Domicilio:</h5>
+          <input
+            type="text"
+            class="form-control inputOrder"
+            placeholder="Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul ..."
+          />
+        </div>
+        <div class="col-xs-12 col-lg-5 mb-1">
+          <h5 class="fontCarosBold text-catalina-blue">Telefono Contacto:</h5>
+          <input type="text" class="form-control inputOrder" placeholder="7821094880" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 mb-1">
+          <h5 class="fontCarosBold text-catalina-blue">Comentarios:</h5>
+        </div>
+        <div class="col-lg-12 mb-1">
+          <div class="form-floating">
+            <textarea class="form-control" style="height: 100px">
+              La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga...
+              </textarea
+            >
+          </div>
+        </div>
+      </div>
       <br />
     </div>
 
     <!-- End Date Collections -->
 
     <!-- Address -->
-    <div class="container card-services">
+    <!-- <div class="container card-services">
       <div class="row">
         <div class="col-lg-12">
           <h5 class="fontCarosExtraLight text-bg">
@@ -308,7 +359,7 @@
 
       <div class="row">
         <div class="col-lg-12">
-          <h5 class="fontCarosBold text-catalina-blue">Detalles:</h5>
+          <h5 class="fontCarosBold text-catalina-blue">Comentarios:</h5>
         </div>
         <div class="col-lg-12">
           <div class="form-floating">
@@ -321,7 +372,7 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
       </div>
       <br />
       <br />
-    </div>
+    </div> -->
 
     <!-- Modal Login -->
     <div
@@ -348,20 +399,6 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
           </div>
           <div class="modal-body">
             <div class="bg-modal-login">
-              <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  Inicia ahora, comienza a realizar tus pedidos. ¿No tienes cuenta?
-                  <span>
-                    <a
-                      class="fontCarosExtraLight text-decoration"
-                      id="viewRegister"
-                      href="#"
-                      >Crea tu cuenta ahora</a
-                    ></span
-                  >
-                </p>
-              </div>
-
               <form class="text-center">
                 <div class="mb-3">
                   <input
@@ -394,6 +431,20 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
                     ></span
                   >
                 </p>
+              </div>
+
+              <hr />
+              <div class="text-center">
+                <p class="fontCarosExtraLight" style="margin: 8px">¿No tienes cuenta?</p>
+
+                <button
+                  type="submit"
+                  class="btn-login fontCarosBold"
+                  id="viewRegister"
+                  style="margin: 0px"
+                >
+                  Crear tu cuenta
+                </button>
               </div>
             </div>
           </div>
@@ -519,9 +570,7 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
           <div class="modal-body">
             <div class="bg-Modal">
               <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  ¡Unase a Vestoj! Configuremos tu cuenta.
-                </p>
+                <p class="fontCarosExtraLight">¡Unase a Vestoj!</p>
               </div>
 
               <form class="text-center">
@@ -536,14 +585,7 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
                   <input
                     type="text"
                     class="form-control bordes-input"
-                    placeholder="Primer apellido"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control bordes-input"
-                    placeholder="Segundo apellido"
+                    placeholder="Apellido"
                   />
                 </div>
                 <div class="mb-3">
@@ -619,12 +661,6 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
           </div>
           <div class="modal-body">
             <div class="bg-modal-pass">
-              <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  Olvidaste tu contraseña, no te preocupes.
-                </p>
-              </div>
-
               <form class="text-center">
                 <div class="mb-3">
                   <input
@@ -640,8 +676,7 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
 
               <div class="textmodal">
                 <p class="fontCarosExtraLight" style="font-size: 12px">
-                  Enviaremos un correo con tus datos para que puedas volver a iniciar
-                  sesión.
+                  Enviaremos un correo con tus datos.
                 </p>
               </div>
             </div>
@@ -676,16 +711,15 @@ La ropa de color rojo tiene una pequeña mancha en la parte inferior de la manga
               </div>
 
               <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
-                Puedes verificar el estado de tu pedido en el siguiente enlace:
+                Verificar el estado de tu pedido en el siguiente enlace.
               </p>
-              <a class="textPedido fontCarosExtraLight" href="#">Mi pedido</a>
+              <a class="textPedido fontCarosExtraLight" href="#">Mi pedido #002934</a>
 
               <br />
-              <p class="textPedido fontCarosExtraLight text-catalina-blue">
-                Tu numero de pedido es: <strong>#002934</strong>
-              </p>
+              <br />
               <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
-                Te hemos enviado un correo electronico con los datos de tu pedido.
+                Te contactaremos en breve por WhatsApp o
+                <a class="textPedido fontCarosExtraLight" href="#">Escribenos</a>
               </p>
 
               <button class="fontCarosBold btn-blue-pelarous">Aceptar</button>

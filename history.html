@@ -76,7 +76,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fontCarosExtraLight" aria-current="page" href="#"
+              <a
+                class="nav-link fontCarosExtraLight"
+                aria-current="page"
+                href="index.html"
                 >Servicios</a
               >
             </li>
@@ -102,7 +105,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">B</a></li>
+                <li><a class="dropdown-item" href="shopping.html">Canasta</a></li>
+                <li><a class="dropdown-item" href="order.html">Mi pedido</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
@@ -137,18 +141,21 @@
                     <i class="fab fa-facebook" style="color: #3b5998"></i>
                     Facebook
                   </a>
+                  <hr class="hrSocial" />
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
                     <i class="fab fa-whatsapp" style="color: #25d366"></i>
                     WhatsApp
                   </a>
+                  <hr class="hrSocial" />
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
                     <i class="fab fa-twitter-square" style="color: #00acee"></i>
                     Twitter
                   </a>
+                  <hr class="hrSocial" />
                 </li>
               </ul>
             </li>
@@ -370,20 +377,6 @@
           </div>
           <div class="modal-body">
             <div class="bg-modal-login">
-              <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  Inicia ahora, comienza a realizar tus pedidos. ¿No tienes cuenta?
-                  <span>
-                    <a
-                      class="fontCarosExtraLight text-decoration"
-                      id="viewRegister"
-                      href="#"
-                      >Crea tu cuenta ahora</a
-                    ></span
-                  >
-                </p>
-              </div>
-
               <form class="text-center">
                 <div class="mb-3">
                   <input
@@ -416,6 +409,20 @@
                     ></span
                   >
                 </p>
+              </div>
+
+              <hr />
+              <div class="text-center">
+                <p class="fontCarosExtraLight" style="margin: 8px">¿No tienes cuenta?</p>
+
+                <button
+                  type="submit"
+                  class="btn-login fontCarosBold"
+                  id="viewRegister"
+                  style="margin: 0px"
+                >
+                  Crear tu cuenta
+                </button>
               </div>
             </div>
           </div>
@@ -541,9 +548,7 @@
           <div class="modal-body">
             <div class="bg-Modal">
               <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  ¡Unase a Vestoj! Configuremos tu cuenta.
-                </p>
+                <p class="fontCarosExtraLight">¡Unase a Vestoj!</p>
               </div>
 
               <form class="text-center">
@@ -558,14 +563,7 @@
                   <input
                     type="text"
                     class="form-control bordes-input"
-                    placeholder="Primer apellido"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control bordes-input"
-                    placeholder="Segundo apellido"
+                    placeholder="Apellido"
                   />
                 </div>
                 <div class="mb-3">
@@ -641,12 +639,6 @@
           </div>
           <div class="modal-body">
             <div class="bg-modal-pass">
-              <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  Olvidaste tu contraseña, no te preocupes.
-                </p>
-              </div>
-
               <form class="text-center">
                 <div class="mb-3">
                   <input
@@ -662,8 +654,7 @@
 
               <div class="textmodal">
                 <p class="fontCarosExtraLight" style="font-size: 12px">
-                  Enviaremos un correo con tus datos para que puedas volver a iniciar
-                  sesión.
+                  Enviaremos un correo con tus datos.
                 </p>
               </div>
             </div>
@@ -698,16 +689,15 @@
               </div>
 
               <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
-                Puedes verificar el estado de tu pedido en el siguiente enlace:
+                Verificar el estado de tu pedido en el siguiente enlace.
               </p>
-              <a class="textPedido fontCarosExtraLight" href="#">Mi pedido</a>
+              <a class="textPedido fontCarosExtraLight" href="#">Mi pedido #002934</a>
 
               <br />
-              <p class="textPedido fontCarosExtraLight text-catalina-blue">
-                Tu numero de pedido es: <strong>#002934</strong>
-              </p>
+              <br />
               <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
-                Te hemos enviado un correo electronico con los datos de tu pedido.
+                Te contactaremos en breve por WhatsApp o
+                <a class="textPedido fontCarosExtraLight" href="#">Escribenos</a>
               </p>
 
               <button class="fontCarosBold btn-blue-pelarous">Aceptar</button>

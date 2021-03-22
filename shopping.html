@@ -76,7 +76,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fontCarosExtraLight" aria-current="page" href="#"
+              <a
+                class="nav-link fontCarosExtraLight"
+                aria-current="page"
+                href="index.html"
                 >Servicios</a
               >
             </li>
@@ -102,7 +105,8 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="profile.html">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">B</a></li>
+                <li><a class="dropdown-item" href="shopping.html">Canasta</a></li>
+                <li><a class="dropdown-item" href="order.html">Mi pedido</a></li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
@@ -137,18 +141,21 @@
                     <i class="fab fa-facebook" style="color: #3b5998"></i>
                     Facebook
                   </a>
+                  <hr class="hrSocial" />
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
                     <i class="fab fa-whatsapp" style="color: #25d366"></i>
                     WhatsApp
                   </a>
+                  <hr class="hrSocial" />
                 </li>
                 <li>
                   <a class="dropdown-item text-white" href="#">
                     <i class="fab fa-twitter-square" style="color: #00acee"></i>
                     Twitter
                   </a>
+                  <hr class="hrSocial" />
                 </li>
               </ul>
             </li>
@@ -238,15 +245,20 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="priceShopping">
-            <h4 class="text-catalina-blue fontCarosBold">
-              SubTotal: <span class="text-black">$ 235.00</span>
-            </h4>
-            <h4 class="text-catalina-blue fontCarosBold">
-              Descuento: <span class="text-black">$ 0.00</span>
-            </h4>
-            <h4 class="text-catalina-blue fontCarosBold">
-              Total Estimado: <span class="text-black">$ 235.00</span>
-            </h4>
+            <div class="contentPriceShopping">
+              <h4 class="text-catalina-blue fontCarosBold spaceBetween">
+                SubTotal: <span class="text-black">$ 235.00</span>
+              </h4>
+              <h4 class="text-catalina-blue fontCarosBold spaceBetween">
+                Descuento: <span class="text-black">$ 0.00</span>
+              </h4>
+              <h4 class="text-catalina-blue fontCarosBold spaceBetween">
+                Tarifa de recoleción: <span class="text-black">$ 40.00</span>
+              </h4>
+              <h4 class="text-catalina-blue fontCarosBold spaceBetween">
+                Total Estimado: <span class="text-black">$ 275.00</span>
+              </h4>
+            </div>
           </div>
         </div>
       </div>
@@ -258,20 +270,17 @@
     <div class="container card-services">
       <div class="row">
         <div class="col-lg-12">
-          <h4 class="fontCarosBold">
-            Selecciona las fechas en que recogeremos tu ropa y la entregaremos limpia.
-          </h4>
+          <h4 class="fontCarosBold">Fechas de Recolección y Entrega</h4>
           <h5 class="fontCarosExtraLight text-bg">
-            Ten en cuenta que el servicio de lavanderia es de Lunes a Viernes 08:00 AM
-            -06:30 PM y Sabados <br />
-            de 08:00 AM - 03:00 PM.
+            Horario de lunes a viernes de 08:00 AM a 06:30 PM y Sabados de 08:00 AM a
+            03:00 PM.
           </h5>
         </div>
       </div>
       <br />
       <div class="row">
         <div class="col-lg-6">
-          <h4 class="fontCarosBold text-catalina-blue">Fecha de recolección</h4>
+          <h4 class="fontCarosBold text-catalina-blue">Recolección</h4>
           <div class="dateCollection">
             <div class="form-group">
               <input
@@ -284,7 +293,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <h4 class="fontCarosBold text-catalina-blue">Fecha de entrega</h4>
+          <h4 class="fontCarosBold text-catalina-blue">Entrega</h4>
           <div class="dateCollection">
             <div class="form-group">
               <input
@@ -303,96 +312,84 @@
     <!-- End Date Collections -->
 
     <!-- Address -->
-    <!-- <div class="bg-white"> -->
+
     <div class="container card-services">
       <div class="row">
         <div class="col-lg-12">
-          <h4 class="fontCarosBold">Selecciona donde recogeremos tu ropa.</h4>
-          <h5 class="fontCarosExtraLight text-bg">
-            El lugar de recoleccion sera el lugar al cual entregaremos de regreso tus
-            prendas limpias.
-          </h5>
+          <h4 class="fontCarosBold">Donde recogeremos tu ropa.</h4>
+          <h5 class="fontCarosExtraLight text-bg">Selecciona o cambia tu direccion.</h5>
         </div>
       </div>
 
       <div class="row">
         <div class="col-lg-12">
           <div class="content-btn-add">
-            <button class="fontCarosBold btn-blue-pelarous" style="margin-left: 15px">
-              <i class="fas fa-plus"></i> Agregar
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono 7821094880"
+            />
+            <button
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+              class="fontCarosBold btn-blue-pelarous"
+              style="margin-left: 15px"
+            >
+              Cambiar
             </button>
           </div>
         </div>
-      </div>
-      <br />
-
-      <div class="row">
-        <div class="col-xs-12 col-lg-12" style="overflow: scroll">
-          <table class="table table-responsive table-bordered border-primary">
-            <thead class="bg-catalina-blue text-white fontCarosExtraLight">
-              <tr>
-                <th scope="col ">Preferente</th>
-                <th scope="col">Domicilio</th>
-                <th scope="col">Editar</th>
-                <th scope="col">Seleccionar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th class="fontCarosExtraLight text-bg"></th>
-                <td class="fontCarosExtraLight text-bg">
-                  Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
-                  7821094880
-                </td>
-                <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-edit"></i>
-                </td>
-                <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-check-circle"></i>
-                </td>
-              </tr>
-              <tr>
-                <th class="fontCarosExtraLight text-bg">Preferencia</th>
-                <td class="fontCarosExtraLight text-bg">
-                  Villanueva 32 #109 - Nuevo retorno- 93250 - NA - #34 - NA - Poza rica-
-                  Telefono 783...
-                </td>
-                <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-edit"></i>
-                </td>
-                <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-check-circle"></i>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <br />
-
-      <div class="row">
         <div class="col-lg-12">
-          <h5 class="fontCarosBold text-catalina-blue">Dirección Seleccionada:</h5>
-        </div>
-        <div class="col-lg-12">
-          <div class="form-floating">
-            <textarea class="form-control" style="height: 100px"></textarea>
-            <label for="floatingTextarea2"
-              >Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
-              7821094880</label
-            >
+          <div class="collapse" id="collapseExample">
+            <div class="contentBtnAddAddres">
+              <button
+                type="button"
+                class="fontCarosBold btn-blue-pelarous"
+                data-bs-toggle="modal"
+                data-bs-target="#modalAddAddress"
+              >
+                <i class="fas fa-plus"></i> Agregar
+              </button>
+            </div>
+            <div class="card-address">
+              <h4 class="fontCarosBold text-catalina-blue">Direcciones</h4>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <th class="fontCarosExtraLight text-bg">
+                      Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul -
+                      Telefono 7821094880
+                    </th>
+                    <td>
+                      <a href="#" class="fontCarosExtraLight text-bg btn-address"
+                        >Editar
+                        <i class="far fa-edit"></i>
+                      </a>
+                    </td>
+                    <td>
+                      <a href="#" class="fontCarosExtraLight text-bg btn-address"
+                        >Seleccionar
+                        <i class="far fa-check-circle"></i>
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
       <br />
     </div>
-    <!-- </div> -->
 
     <!-- Details -->
     <div class="container card-services">
       <div class="row">
         <div class="col-lg-12 details">
-          <h4 class="fontCarosBold m-1">Añadir detalles</h4>
+          <h4 class="fontCarosBold m-1">Añadir comentarios</h4>
           <div class="positionBtn">
             <button class="btnDetalles text-center m-1" type="button" id="ShowComent">
               <i class="fas fa-plus"></i>
@@ -408,11 +405,7 @@
           <div class="collapse" id="comentarios">
             <div class="card card-body">
               <h5 class="fontCarosExtraLight text-bg">
-                Agrega los detalles correspondientes para continuar, por ejemplo si tu
-                prenda tiene una mancha, si elegiste un servicio recuerda que tienes que
-                dejar reparada la ropa que se tiene que lavar y planchar. Estamos para
-                atenderte cualquier detalle aquí con tus prendas aqui nos los puedes
-                escribir.
+                Si tu ropa necesita un cuidado especial, avisanos.
               </h5>
               <div class="form-floating">
                 <textarea class="form-control" style="height: 100px"></textarea>
@@ -461,20 +454,6 @@
           </div>
           <div class="modal-body">
             <div class="bg-modal-login">
-              <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  Inicia ahora, comienza a realizar tus pedidos. ¿No tienes cuenta?
-                  <span>
-                    <a
-                      class="fontCarosExtraLight text-decoration"
-                      id="viewRegister"
-                      href="#"
-                      >Crea tu cuenta ahora</a
-                    ></span
-                  >
-                </p>
-              </div>
-
               <form class="text-center">
                 <div class="mb-3">
                   <input
@@ -507,6 +486,20 @@
                     ></span
                   >
                 </p>
+              </div>
+
+              <hr />
+              <div class="text-center">
+                <p class="fontCarosExtraLight" style="margin: 8px">¿No tienes cuenta?</p>
+
+                <button
+                  type="submit"
+                  class="btn-login fontCarosBold"
+                  id="viewRegister"
+                  style="margin: 0px"
+                >
+                  Crear tu cuenta
+                </button>
               </div>
             </div>
           </div>
@@ -632,9 +625,7 @@
           <div class="modal-body">
             <div class="bg-Modal">
               <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  ¡Unase a Vestoj! Configuremos tu cuenta.
-                </p>
+                <p class="fontCarosExtraLight">¡Unase a Vestoj!</p>
               </div>
 
               <form class="text-center">
@@ -649,14 +640,7 @@
                   <input
                     type="text"
                     class="form-control bordes-input"
-                    placeholder="Primer apellido"
-                  />
-                </div>
-                <div class="mb-3">
-                  <input
-                    type="text"
-                    class="form-control bordes-input"
-                    placeholder="Segundo apellido"
+                    placeholder="Apellido"
                   />
                 </div>
                 <div class="mb-3">
@@ -732,12 +716,6 @@
           </div>
           <div class="modal-body">
             <div class="bg-modal-pass">
-              <div class="textmodal">
-                <p class="fontCarosExtraLight">
-                  Olvidaste tu contraseña, no te preocupes.
-                </p>
-              </div>
-
               <form class="text-center">
                 <div class="mb-3">
                   <input
@@ -753,8 +731,7 @@
 
               <div class="textmodal">
                 <p class="fontCarosExtraLight" style="font-size: 12px">
-                  Enviaremos un correo con tus datos para que puedas volver a iniciar
-                  sesión.
+                  Enviaremos un correo con tus datos.
                 </p>
               </div>
             </div>
@@ -789,21 +766,132 @@
               </div>
 
               <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
-                Puedes verificar el estado de tu pedido en el siguiente enlace:
+                Verificar el estado de tu pedido en el siguiente enlace.
               </p>
-              <a class="textPedido fontCarosExtraLight" href="#">Mi pedido</a>
+              <a class="textPedido fontCarosExtraLight" href="#">Mi pedido #002934</a>
 
               <br />
-              <p class="textPedido fontCarosExtraLight text-catalina-blue">
-                Tu numero de pedido es: <strong>#002934</strong>
-              </p>
+              <br />
               <p class="textPedido fontCarosExtraLight" style="font-size: 14px">
-                Te hemos enviado un correo electronico con los datos de tu pedido.
+                Te contactaremos en breve por WhatsApp o
+                <a class="textPedido fontCarosExtraLight" href="#">Escribenos</a>
               </p>
 
-              <button class="fontCarosBold btn-blue-pelarous" data-bs-dismiss="modal">
-                Aceptar
-              </button>
+              <button class="fontCarosBold btn-blue-pelarous">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div
+      class="modal fade"
+      id="modalAddAddress"
+      tabindex="-1"
+      aria-labelledby="modalAddAddress"
+      aria-hidden="true"
+      style="overflow-y: scroll"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">
+                Agregar Direccion
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-Modal">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Ingresa los datos correspondientes a la neva direccion.
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Calle"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Numero"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Colonia"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Codigo Postal"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Nombre persona"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Telefono"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Edificio (Opcional)"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Departamento (Opcional)"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">Registrarse</button>
+                <button
+                  type="button"
+                  class="btn-red fontCarosBold"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Al hacer clic en registrarse, acepta los termino de privacidad.
+                </p>
+              </div>
             </div>
           </div>
         </div>

@@ -1,16 +1,18 @@
-/* Import Fonts */
-/* @font-face {
-  font-family: 'Caros Bold';
-  src: url('../fonts/cretypeCarosBold.woff');
-}
-
-@font-face {
-  font-family: 'Caros Extra Light';
-  src: url('../fonts/cretype\ \ Caros\ ExtraLight.woff');
-} */
-
 body {
   background: #d9f4ff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ocultar scroll de modal */
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.hrSocial {
+  width: 140px;
+  margin: auto;
 }
 
 /* Carrito de compras */
@@ -73,12 +75,13 @@ body {
   right: 0px;
   transition: all 300ms ease 0ms;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  z-index: 99;
+  z-index: 1055;
 }
 
 .btn-flotante:hover {
   background-color: rgb(52, 171, 191);
   color: #fff;
+  z-index: 1055;
 }
 
 .close {
@@ -99,7 +102,7 @@ body {
   right: 5px;
   transition: all 300ms ease 0ms;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  z-index: 99;
+  z-index: 1055;
 }
 
 .container-social {
@@ -109,13 +112,10 @@ body {
   flex-direction: column;
   font-size: 30px;
   font-weight: bold;
-  /* color: #ffffff; */
-  /* border-radius: 50px;
-  background-color: rgb(6, 56, 115); */
   position: fixed;
   bottom: 110px;
   right: 15px;
-  z-index: 99;
+  z-index: 1055;
 }
 
 .btn-social {
@@ -243,13 +243,14 @@ body {
   border: 0px;
   border-bottom: 1px solid rgb(52, 171, 191);
   outline: none;
+  box-shadow: none;
 }
 
 .textmodal {
   font-weight: bold;
   font-size: 14px;
   /* line-height: 10px; */
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 .btn-login {
@@ -339,11 +340,13 @@ body {
 }
 
 .btn-red {
+  width: 140px;
   background-color: #c2272d;
-  padding: 6px 20px;
+  padding: 10px 20px;
   border-radius: 50px;
   border: 0px;
   color: #fff;
+  font-size: 18px;
 }
 
 .priceShopping {
@@ -351,6 +354,11 @@ body {
   flex-direction: column;
   align-items: flex-end;
   margin: 0px 0px 20px 0px;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Address Shopping */
@@ -368,6 +376,29 @@ body {
   background-color: #fff;
   border: 1px solid rgb(52, 171, 191);
   color: rgb(52, 171, 191);
+}
+
+.contentBtnAddAddres {
+  margin: 15px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-address {
+  border: 1px solid rgb(52, 171, 191);
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.btn-address {
+  margin: auto;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.btn-address:hover {
+  color: rgb(6, 56, 115);
 }
 
 .details {
@@ -410,7 +441,7 @@ body {
 .priceShoppingOrder {
   display: flex;
   justify-content: space-between;
-  margin: 30px 0px 30px 0px;
+  margin: 10px 0px;
 }
 
 .inputOrder {
@@ -538,6 +569,7 @@ body {
   /* order */
   .priceShoppingOrder {
     flex-direction: column;
+    margin: 0px;
   }
 
   /* Profile */

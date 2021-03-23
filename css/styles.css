@@ -447,6 +447,17 @@ body {
 .inputOrder {
   margin-bottom: 10px;
 }
+
+.borderRight {
+  margin-right: 78px;
+}
+
+.img-status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
 /* ------------------------------------------------------------------------------- */
 /* Phofile */
 #nav-two-responsive {
@@ -572,6 +583,10 @@ body {
     margin: 0px;
   }
 
+  .borderRight {
+    margin-right: 0px;
+  }
+
   /* Profile */
   #nav-two {
     display: none;
@@ -602,4 +617,6 @@ body {
   .inputPromotion {
     width: 100%;
   }
+
+  /* Order */
 }

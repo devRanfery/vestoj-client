@@ -47,7 +47,7 @@
 }
 
 .nav-link {
-  color: rgb(6, 56, 115);
+  color: rgb(6, 56, 115) !important;
   border-bottom: 1px solid #fff;
   padding: 0.3rem 1rem;
 }
@@ -73,6 +73,10 @@
 .text-decoration:hover {
   text-decoration: none;
   color: rgb(6, 56, 115);
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* Margin */

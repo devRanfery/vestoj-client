@@ -503,6 +503,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.FontCard {
+  font-size: 15px;
+}
 /* ------------------------------------------------------------------------------- */
 /* Phofile */
 #nav-two-responsive {

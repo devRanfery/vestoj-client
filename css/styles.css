@@ -458,6 +458,51 @@ body {
   align-items: center;
   margin-top: 10px;
 }
+
+.imgPayment {
+  width: 40px;
+}
+
+.mr-card {
+  margin-right: 10px;
+}
+
+.contentImgPayment {
+  display: flex;
+  align-items: center;
+}
+
+.cardDebito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.btnPayment {
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  background: rgb(52, 171, 191);
+  border: none;
+  padding: 10px 20px;
+  margin: 15px 0px;
+}
+
+.btnValidate {
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  background: rgb(52, 171, 191);
+  border: none;
+  margin-left: 15px;
+}
+
+.contentValidateCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ------------------------------------------------------------------------------- */
 /* Phofile */
 #nav-two-responsive {

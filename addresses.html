@@ -261,72 +261,78 @@
     </div>
     <!-- End CardNavMobile  -->
 
-    <!-- Button Add Addresses -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <button
-            class="fontCarosBold btn-blue-pelarous"
-            type="button"
-            id="btnAddAddress"
-          >
-            Agregar Dirección
-          </button>
-        </div>
-      </div>
-    </div>
-
     <!-- Table Of Addresses -->
     <div class="container card-services">
       <div class="row">
-        <div class="col-xs-12 col-lg-12" style="overflow: scroll">
-          <table class="table table-responsive table-bordered border-primary">
-            <thead class="bg-catalina-blue text-white fontCarosExtraLight">
-              <tr>
-                <th scope="col ">Preferente</th>
-                <th scope="col">Domicilio</th>
-                <th scope="col">Editar</th>
-                <th scope="col">Eliminar</th>
-              </tr>
-            </thead>
+        <div class="col-lg-12 text-center">
+          <h2 class="fontCarosBold text-bg">Mis Direcciones</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mb-3">
+          <button
+            class="fontCarosBold btn-blue-pelarous"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#modalAddAddress"
+          >
+            Agregar
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-lg-12">
+          <table class="table">
             <tbody>
               <tr>
-                <th class="fontCarosExtraLight text-bg"></th>
                 <td class="fontCarosExtraLight text-bg">
                   Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
                   7821094880
                 </td>
                 <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-edit"></i>
+                  <a data-bs-toggle="modal" data-bs-target="#modalAddAddress">
+                    Editar &nbsp<i class="far fa-edit"></i>
+                  </a>
                 </td>
                 <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-trash-alt"></i>
+                  Eliminar &nbsp<i class="far fa-trash-alt"></i>
+                </td>
+                <td>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                 </td>
               </tr>
               <tr>
-                <th class="fontCarosExtraLight text-bg">Preferencia</th>
                 <td class="fontCarosExtraLight text-bg">
                   Villanueva 32 #109 - Nuevo retorno- 93250 - NA - #34 - NA - Poza rica-
                   Telefono 783...
                 </td>
                 <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-edit"></i>
+                  <a data-bs-toggle="modal" data-bs-target="#modalAddAddress">
+                    Editar &nbsp<i class="far fa-edit"></i>
+                  </a>
                 </td>
                 <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-trash-alt"></i>
+                  Eliminar &nbsp<i class="far fa-trash-alt"></i>
+                </td>
+                <td>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                 </td>
               </tr>
               <tr>
-                <th class="fontCarosExtraLight text-bg"></th>
                 <td class="fontCarosExtraLight text-bg">
                   Pozo 13 #109 - Poza azul - 92900 - NA - #123 - NA - Poza azul - Telefono
                   7821094880
                 </td>
                 <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-edit"></i>
+                  <a data-bs-toggle="modal" data-bs-target="#modalAddAddress">
+                    Editar &nbsp<i class="far fa-edit"></i>
+                  </a>
                 </td>
                 <td class="fontCarosExtraLight text-bg text-center">
-                  <i class="far fa-trash-alt"></i>
+                  Eliminar &nbsp<i class="far fa-trash-alt"></i>
+                </td>
+                <td>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1" />
                 </td>
               </tr>
             </tbody>
@@ -336,7 +342,7 @@
     </div>
 
     <!-- Form Add Addresses -->
-    <div id="contentAddAddress">
+    <!-- <div id="contentAddAddress">
       <div class="container card-services">
         <div class="row">
           <div class="col-lg-12">
@@ -407,7 +413,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--End Form Add Addresses -->
 
     <!-- Modal Login -->
@@ -759,6 +765,120 @@
               </p>
 
               <button class="fontCarosBold btn-blue-pelarous">Aceptar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Add Address -->
+    <div
+      class="modal fade"
+      id="modalAddAddress"
+      tabindex="-1"
+      aria-labelledby="modalAddAddress"
+      aria-hidden="true"
+      style="overflow-y: scroll"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="titulo">
+              <h5 class="modal-titulo text-catalina-blue fontCarosBold">
+                Agregar Direccion
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="bg-Modal">
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Ingresa los datos correspondientes a la neva direccion.
+                </p>
+              </div>
+
+              <form class="text-center">
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Calle"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Numero"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Colonia"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Codigo Postal"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Nombre persona"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Telefono"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Edificio (Opcional)"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control bordes-input"
+                    placeholder="Departamento (Opcional)"
+                  />
+                </div>
+
+                <button type="submit" class="btn-login fontCarosBold">Registrarse</button>
+                <button
+                  type="button"
+                  class="btn-red fontCarosBold"
+                  data-bs-dismiss="modal"
+                >
+                  Cancelar
+                </button>
+              </form>
+
+              <div class="textmodal">
+                <p class="fontCarosExtraLight">
+                  Al hacer clic en registrarse, acepta los termino de privacidad.
+                </p>
+              </div>
             </div>
           </div>
         </div>

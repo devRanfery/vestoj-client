@@ -318,7 +318,11 @@
             </div>
 
             <div class="col-md-12" style="display: flex; justify-content: flex-end">
-              <a href="#" class="fontCarosExtraLight text-bg btnRecoverPassword"
+              <a
+                href="#"
+                class="fontCarosExtraLight text-bg btnRecoverPassword"
+                data-bs-toggle="modal"
+                data-bs-target="#passwordModal"
                 >Quiero cambiar mi contraseña.</a
               >
             </div>
@@ -330,6 +334,7 @@
         </div>
       </div>
     </div>
+
     <!-- Modal Login -->
     <div
       class="modal fade"
@@ -617,24 +622,41 @@
           </div>
           <div class="modal-body">
             <div class="bg-modal-pass">
-              <form class="text-center">
+              <form>
                 <div class="mb-3">
                   <input
-                    type="email"
+                    type="password"
                     class="form-control bordes-input"
-                    aria-describedby="emailHelp"
-                    placeholder="Correo electronico"
+                    placeholder="Contraseña actual"
+                  />
+                </div>
+                <div class="mb-3">
+                  <p class="fontCarosExtraLight text-catalina-blue">
+                    Ingresa tu nueva contraseña y confirmala
+                  </p>
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Nueva Contraseña"
                   />
                 </div>
 
-                <button type="submit" class="btn-login fontCarosBold">Recuperar</button>
-              </form>
+                <div class="mb-3">
+                  <input
+                    type="password"
+                    class="form-control bordes-input"
+                    placeholder="Confirmar Contraseña"
+                  />
+                </div>
 
-              <div class="textmodal">
-                <p class="fontCarosExtraLight" style="font-size: 12px">
-                  Enviaremos un correo con tus datos.
-                </p>
-              </div>
+                <div class="text-center">
+                  <button type="submit" class="btn-login fontCarosBold">
+                    Actualizar
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

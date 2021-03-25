@@ -404,90 +404,84 @@
           </div>
           <div class="modal-body">
             <div class="bg-modal-login">
-              <form>
-                <div class="mb-3">
-                  <!-- <div class="dropdown"> -->
-                  <button
-                    class="btn btnPayment dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Metodo de pago
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="contentImgPayment">
-                          <img
-                            class="imgPayment mr-card"
-                            src="image/payments/visa.png"
-                            alt=""
-                          />
-                          Visa
+              <div class="dropdown">
+                <button
+                  class="btnPayment dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Metodo de pago
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li>
+                    <a class="dropdown-item btn-Payment" href="#">
+                      <div class="contentImgPayment">
+                        <img
+                          class="imgPayment mr-card"
+                          src="image/payments/visa.png"
+                          alt=""
+                        />
+                        Visa
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item btn-Payment" href="#">
+                      <div class="contentImgPayment">
+                        <img
+                          class="imgPayment mr-card"
+                          src="image/payments/mastercard.png"
+                          alt=""
+                        />
+                        Mastercard
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item btn-Payment" href="#">
+                      <div class="contentImgPayment">
+                        <div class="cardDebito mr-card">
+                          <img class="imgPayment" src="image/payments/visa.png" alt="" />
+                          <p>Débito</p>
                         </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="contentImgPayment">
+                        Visa
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item btn-Payment" href="#">
+                      <div class="contentImgPayment">
+                        <div class="cardDebito mr-card">
                           <img
-                            class="imgPayment mr-card"
+                            class="imgPayment"
                             src="image/payments/mastercard.png"
                             alt=""
                           />
-                          Mastercard
+                          <p>Débito</p>
                         </div>
-                      </a>
-                    </li>
+                        Mastercard
+                      </div>
+                    </a>
+                  </li>
 
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="contentImgPayment">
-                          <div class="cardDebito mr-card">
-                            <img
-                              class="imgPayment"
-                              src="image/payments/visa.png"
-                              alt=""
-                            />
-                            <p>Débito</p>
-                          </div>
-                          Visa
-                        </div>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="contentImgPayment">
-                          <div class="cardDebito mr-card">
-                            <img
-                              class="imgPayment"
-                              src="image/payments/mastercard.png"
-                              alt=""
-                            />
-                            <p>Débito</p>
-                          </div>
-                          Mastercard
-                        </div>
-                      </a>
-                    </li>
-
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="contentImgPayment">
-                          <img
-                            class="imgPayment mr-card"
-                            src="image/payments/American_Express.png"
-                            alt=""
-                          />
-                          American Express
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                  <!-- </div> -->
-                </div>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="contentImgPayment">
+                        <img
+                          class="imgPayment mr-card"
+                          src="image/payments/American_Express.png"
+                          alt=""
+                        />
+                        American Express
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <form id="formPayment">
                 <div class="mb-3">
                   <label
                     for="exampleInputEmail1"
@@ -526,6 +520,7 @@
                         type="text"
                         class="form-control text-center"
                         placeholder="MM"
+                        maxlength="2"
                       />
                     </div>
                     <div class="col-lg-4">
@@ -538,6 +533,7 @@
                         type="text"
                         class="form-control text-center"
                         placeholder="YYYY"
+                        maxlength="4"
                       />
                     </div>
                     <div class="col-lg-4">
@@ -550,6 +546,7 @@
                         type="text"
                         class="form-control text-center"
                         placeholder="XXX"
+                        maxlength="3"
                       />
                     </div>
                   </div>
@@ -957,5 +954,6 @@
 
     <script src="js/btn-float.js"></script>
     <script src="js/quantityInput.js"></script>
+    <script src="js/btnPayment.js"></script>
   </body>
 </html>

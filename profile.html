@@ -275,44 +275,54 @@
       <div class="row">
         <div class="col-lg">
           <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4">
-              <label class="form-label fontCarosBold text-catalina-blue">Nombre:</label>
-              <input type="text" class="form-control" required />
+            <div class="col-md-6">
+              <div class="contentInputProfile">
+                <label class="fontCarosBold text-catalina-blue labelProfile"
+                  >Nombre:</label
+                >
+                <input type="text" class="form-control" required placeholder="Luis" />
+              </div>
+
+              <div class="contentInputProfile">
+                <label class="fontCarosBold text-catalina-blue labelProfile"
+                  >Apellido:</label
+                >
+                <input type="text" class="form-control" required placeholder="Veraza" />
+              </div>
             </div>
-            <div class="col-md-4">
-              <label class="form-label fontCarosBold text-catalina-blue"
-                >Primer apellido:</label
+
+            <div class="col-md-6">
+              <div class="contentInputProfile">
+                <label class="fontCarosBold text-catalina-blue labelProfile"
+                  >Correo:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  required
+                  placeholder="luisveraza@gmail.com"
+                />
+              </div>
+
+              <div class="contentInputProfile">
+                <label class="fontCarosBold text-catalina-blue labelProfile"
+                  >Telefono:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  required
+                  placeholder="5556537467"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-12" style="display: flex; justify-content: flex-end">
+              <a href="#" class="fontCarosExtraLight text-bg btnRecoverPassword"
+                >Quiero cambiar mi contraseña.</a
               >
-              <input type="text" class="form-control" required />
             </div>
-            <div class="col-md-4">
-              <label class="form-label fontCarosBold text-catalina-blue"
-                >Segundo apellido:</label
-              >
-              <input type="text" class="form-control" required />
-            </div>
-            <div class="col-md-4">
-              <label class="form-label fontCarosBold text-catalina-blue"
-                >Correo electronico:</label
-              >
-              <input type="email" class="form-control" required />
-            </div>
-            <div class="col-md-4">
-              <label class="form-label fontCarosBold text-catalina-blue">Telefono:</label>
-              <input type="text" class="form-control" required />
-            </div>
-            <div class="col-md-4">
-              <label class="form-label fontCarosBold text-catalina-blue"
-                >Contraseña actual:</label
-              >
-              <input type="text" class="form-control" required />
-            </div>
-            <div class="col-md-4">
-              <label class="form-label fontCarosBold text-catalina-blue"
-                >Confirmar contraseña:</label
-              >
-              <input type="text" class="form-control" required />
-            </div>
+
             <div class="col-12 text-center">
               <button class="fontCarosBold btn-blue-pelarous">Actualizar</button>
             </div>

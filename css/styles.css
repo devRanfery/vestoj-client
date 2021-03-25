@@ -486,7 +486,7 @@ body {
   background: rgb(52, 171, 191);
   border: none;
   padding: 10px 20px;
-  margin: 15px 0px;
+  margin: 0px 0px 10px 0px;
 }
 
 .btnValidate {
@@ -563,6 +563,26 @@ body {
 .nav-direct {
   text-align: center;
   text-decoration: none;
+}
+
+.labelProfile {
+  width: 100px;
+  margin-left: 10px;
+}
+
+.contentInputProfile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0px;
+}
+
+.btnRecoverPassword {
+  text-decoration: none;
+}
+
+.btnRecoverPassword:hover {
+  color: rgb(6, 56, 115);
 }
 
 /* ------------------------------------------------------------------------------------ */

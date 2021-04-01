@@ -613,6 +613,25 @@ body {
   justify-content: center;
   margin-top: 31px;
 }
+/* ------------------------------------------------------------------------------------ */
+/* COVERAGE */
+.textCoverage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.textCoverage h5 {
+  margin: 0;
+}
+
+.iconCoverage {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+/* ------------------------------------------------------------------------------------ */
 
 /* START MEDIAS QUERYS */
 @media only screen and (max-width: 600px) {

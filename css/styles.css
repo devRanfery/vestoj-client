@@ -585,6 +585,10 @@ body {
   color: rgb(6, 56, 115);
 }
 
+.LinkUpdatePassword {
+  display: flex;
+  justify-content: flex-end;
+}
 /* ------------------------------------------------------------------------------------ */
 /* HISTORY */
 .btnMoreDetails {
@@ -684,6 +688,9 @@ body {
     display: block;
   }
 
+  .LinkUpdatePassword {
+    justify-content: flex-start;
+  }
   /* History */
   .inputSearch {
     justify-content: flex-end;
